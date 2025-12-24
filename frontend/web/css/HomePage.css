@@ -1,0 +1,42 @@
+/* --- CONFIGURAÇÕES GERAIS --- */
+:root {
+    --primary-color: #FF6F61; /* A cor do seu template original */
+    --dark-color: #000000;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #f3f6ff;
+    color: #353535;
+}
+
+h1, h2, h3, h4, .navbar-brand {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 700;
+}
+
+/* Substituição de classes do Bootstrap para usar a sua cor */
+.text-primary-custom { color: var(--primary-color) !important; }
+.bg-primary-custom { background-color: var(--primary-color) !important; }
+.btn-primary-custom {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+}
+.btn-primary-custom:hover {
+    background-color: var(--dark-color);
+    border-color: var(--dark-color);
+    color: white;
+}
+
+/* Hover effects nos links */
+a { color: var(--dark-color); transition: 0.3s; }
+a:hover { color: var(--primary-color); text-decoration: none; }
+
+/* Ajustes Específicos que o Bootstrap não cobre */
+.top-bar { font-size: 14px; }
+.product-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important; transition: 0.3s; }
+.category-img { height: 100%; object-fit: cover; width: 100%; min-height: 200px; }
+
+/* Menu Lateral */
+.nav-link i { width: 20px; text-align: center; color: var(--primary-color); margin-right: 5px; }
